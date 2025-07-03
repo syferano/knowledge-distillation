@@ -22,14 +22,14 @@ for filename in os.listdir(CHECKPOINT_DIR):
                     best_epoch = epoch
                     best_path = path
             else:
-                print(f"⚠️  Skipped {filename} (no loss info)")
+                print(f"  Skipped {filename} (no loss info)")
         except Exception as e:
             print(f"❌ Failed to load {filename}: {e}")
 
 if best_path:
-    print("\n✅ Best Model Found:")
+    print("\n Best Model Found:")
     print(f"   Epoch: {best_epoch}")
     print(f"   Loss : {best_loss:.4f}")
     print(f"   Path : {best_path}")
 else:
-    print("❌ No valid checkpoints with loss found.")
+    print(" No valid checkpoints with loss found.")
