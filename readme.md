@@ -51,6 +51,17 @@ The student model supports real-time inference (~30 FPS) on 1080p images (1920×
    ```bash
    python stuops.py
 
+4. **Generate Teacher Model Outputs**
+
+   ```bash
+   python teacherops.py
+
+5. **Evaluate SSIM Scores**
+
+   ```bash
+   python ssim_eval.py
+
+
 
 
 
