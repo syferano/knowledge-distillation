@@ -80,4 +80,4 @@ with torch.no_grad():
         sr_image = transforms.ToPILImage()(sr_tensor)
         sr_image.save(os.path.join(output_dir, fname))
 
-print(f"✅ Saved {len(image_files)} teacher outputs to: {output_dir}")
+print(f" Saved {len(image_files)} teacher outputs to: {output_dir}")
