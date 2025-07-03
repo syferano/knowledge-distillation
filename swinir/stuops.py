@@ -16,7 +16,7 @@ os.makedirs(output_dir, exist_ok=True)
 
 # Device
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-print(f"✅ Using device: {device}")
+print(f" Using device: {device}")
 
 # Load model
 model = StudentCNN().to(device)
@@ -50,4 +50,4 @@ with torch.no_grad():
         output_img = transforms.ToPILImage()(output)
         output_img.save(os.path.join(output_dir, fname))
 
-        print(f"✅ Saved: {fname} | Output shape: {output.shape}")
+        print(f" Saved: {fname} | Output shape: {output.shape}")
