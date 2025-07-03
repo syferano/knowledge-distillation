@@ -38,7 +38,7 @@ for filename in tqdm(image_filenames, desc="Computing SSIM"):
     ssim_scores["bicubic"].append(ssim(bicubic, gt, data_range=1.0).item())
 
 # === Averages ===
-print("\n🔎 Average SSIM Scores:")
+print("\n Average SSIM Scores:")
 for key in ssim_scores:
     avg = sum(ssim_scores[key]) / len(ssim_scores[key])
     print(f"{key.capitalize()} SSIM: {avg:.4f}")
