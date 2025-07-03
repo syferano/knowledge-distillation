@@ -62,10 +62,6 @@ The student model supports real-time inference (~30 FPS) on 1080p images (1920×
    python ssim_eval.py
 
 
-
-
-
-
 **Acknowledgements**
 
 SwinIR: https://github.com/JingyunLiang/SwinIR
