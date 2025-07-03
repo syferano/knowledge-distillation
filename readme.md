@@ -32,7 +32,7 @@ This project implements an image sharpening technique using knowledge distillati
 
 ## Inference Speed
 
-The student model supports real-time inference (~60 FPS) on 1080p images (1920×1080) when run with batch size 1 on an NVIDIA RTX 3050 Laptop GPU.
+The student model supports real-time inference (~30 FPS) on 1080p images (1920×1080) when run with batch size 1 on an NVIDIA RTX 3050 Laptop GPU.
 
 ## How to Run
 
@@ -58,4 +58,5 @@ The student model supports real-time inference (~60 FPS) on 1080p images (1920×
 **Acknowledgements**
 
 SwinIR: https://github.com/JingyunLiang/SwinIR
+
 SSIM Loss: pytorch-msssim library
