@@ -3,6 +3,7 @@
 This project implements an image sharpening technique using knowledge distillation. A lightweight convolutional neural network (StudentCNN) is trained to approximate the output of a high-performing model (SwinIR) on downscaled images. The student model is optimized for real-time performance and evaluated using SSIM metrics to compare its output against both the teacher model and bicubic interpolation.
 
 Link to the report: https://drive.google.com/file/d/1eGgCaTa4JIhlExkX5eTsYI7xsyfXsIDq/view?usp=sharing
+
 Link to the video: https://drive.google.com/file/d/1lUdczNihaXHFR9egkhmQd6k4N8D8TkoO/view?usp=drive_link
 
 ## Project Structure
